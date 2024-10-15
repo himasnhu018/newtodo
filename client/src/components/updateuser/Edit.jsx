@@ -21,7 +21,7 @@ const Edit = () => {
     };
 
     useEffect(() => {
-        axios.get(`https://newtodo-cg9y.onrender.com:10000/api/getone/${id}`)
+        axios.get(`https://newtodo-cg9y.onrender.com/api/getone/${id}`)
             .then((response) => {
                 setUser(response.data);
             })
@@ -32,7 +32,7 @@ const Edit = () => {
 
     const submitForm = async (e) => {
         e.preventDefault();
-        await axios.put(`https://newtodo-cg9y.onrender.com:10000/api/update/${id}`, user)
+        await axios.put(`https://newtodo-cg9y.onrender.com/api/update/${id}`, user)
             .then((response) => {
                 toast.success(response.data.msg, { position: "top-right" });
                 navigate("/");  // Navigate to home after successful update

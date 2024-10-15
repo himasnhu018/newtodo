@@ -9,14 +9,14 @@ const User = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await axios.get("https://newtodo-cg9y.onrender.com:10000/api/getall");
+            const response = await axios.get("https://newtodo-cg9y.onrender.com/api/getall");
             setUsers(response.data);
         };
         fetchData();
     }, []);
 
     const deleteUser = async (userId) => {
-        await axios.delete(`https://newtodo-cg9y.onrender.com:10000/api/delete/${userId}`)  // Use backticks for template literals
+        await axios.delete(`https://newtodo-cg9y.onrender.com/api/delete/${userId}`)  // Use backticks for template literals
             .then((response) => {
                 // Properly filter out the deleted user
                 setUsers((prevUsers) => prevUsers.filter(user => user._id !== userId));

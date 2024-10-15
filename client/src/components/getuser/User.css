@@ -1,0 +1,84 @@
+.userTable {
+    max-width: 80%; /* Make it more responsive */
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    margin: 50px auto;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif; /* Consistent font style */
+    transition: all 0.3s ease;
+}
+
+.userTable:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Hover effect */
+}
+
+.addButton {
+    text-decoration: none;
+    background: linear-gradient(135deg, #7b38d8, #9d58d8);
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block; /* Better display for button */
+}
+
+.addButton:hover {
+    background: linear-gradient(135deg, #6a2fc4, #843fce);
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.userTable table {
+    width: 100%;
+    margin-top: 20px; /* Reduced margin for better spacing */
+    border-collapse: collapse;
+}
+
+.userTable table thead th {
+    background-color: #4b0082; /* Darker shade for header */
+    color: white;
+    padding: 12px; /* Slightly increased padding */
+    text-align: left; /* Align text to the left for a cleaner look */
+}
+
+.userTable table tbody td {
+    padding: 12px; /* Increased padding for better spacing */
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Subtle separator between rows */
+}
+
+.userTable table tbody tr:hover {
+    background-color: #f4f4f4; /* Highlight row on hover */
+}
+
+.actionButtons button {
+    border: none;
+    outline: none;
+    background: red;
+    padding: 10px 15px; /* Increased padding */
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+.actionButtons button:hover {
+    background: darkred; /* Darker red on hover */
+}
+
+.actionButtons a {
+    background: green;
+    padding: 10px 15px; /* Increased padding */
+    color: white;
+    border-radius: 8px; /* Rounded corners */
+    margin: 0 10px;
+    text-decoration: none;
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+.actionButtons a:hover {
+    background: darkgreen; /* Darker green on hover */
+}
+
